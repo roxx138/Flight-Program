@@ -29,9 +29,11 @@ public class flight {
 			{
 				this.flightNumber = flightNumber;
 				this.capacity = capacity;
+				this.numOfSeatsLeft = capacity - ticket.number;
 				this.departureTime = departureTime;
 				this.origin = origin;
 				this.destination = destination;
+				this.originalPrice = originalPrice;
 			}	
 			
 		}catch(IllegalArgumentException a){
